@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ذكرياتنا الحلوة ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff69b4;
+      margin-top: 30px;
+      font-size: 32px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+
+    .photo:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .spotify-button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Cairo', sans-serif;
+      margin: 40px 0;
+    }
+
+    .spotify-button:hover {
+      background-color: white;
+      color: #ff69b4;
+      transform: scale(1.1);
+      border: 2px solid #ff69b4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ذكرياتنا الحلوة سوا ❤️</h1>
+
+  <div class="gallery">
+    <div class="photo"><img src="extracted_images/img1.jpg" alt="img1"></div>
+    <div class="photo"><img src="extracted_images/img2.jpg" alt="img2"></div>
+    <div class="photo"><img src="extracted_images/img3.jpg" alt="img3"></div>
+    <div class="photo"><img src="extracted_images/img4.jpg" alt="img4"></div>
+    <div class="photo"><img src="extracted_images/img5.jpg" alt="img5"></div>
+    <div class="photo"><img src="extracted_images/img6.jpg" alt="img6"></div>
+    <div class="photo"><img src="extracted_images/img7.jpg" alt="img7"></div>
+    <div class="photo"><img src="extracted_images/img8.jpg" alt="img8"></div>
+    <div class="photo"><img src="extracted_images/img9.jpg" alt="img9"></div>
+    <div class="photo"><img src="extracted_images/img10.jpg" alt="img10"></div>
+    <div class="photo"><img src="extracted_images/img11.jpg" alt="img11"></div>
+    <div class="photo"><img src="extracted_images/img12.jpg" alt="img12"></div>
+    <div class="photo"><img src="extracted_images/img13.jpg" alt="img13"></div>
+  </div>
+
+  <div>
+    <button class="spotify-button" onclick="openSpotify()">جرب اضغط علي كده</button>
+  </div>
+
+  <script>
+    function openSpotify() {
+      window.open("https://open.spotify.com/track/7uXemEmhbnf11vUsQLzxfQ?si=p_8jtxSpQwOkpYT5cp5peQ", "_blank");
+    }
+  </script>
+
+</body>
+</html>
